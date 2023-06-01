@@ -77,4 +77,25 @@ export const myProjects = [
     link: 'https://pokedex-kdevz.netlify.app/',
     git: 'https://github.com/sofyan-rs/pokedex-react',
   },
+  {
+    title: 'Z-Stream',
+    description: 'Theme Wordpress for Streaming & Download Anime Website.',
+    image: null,
+    link: null,
+    git: null,
+  },
+  {
+    title: 'Z-Manga',
+    description: 'Theme Wordpress for Reading Manga Website.',
+    image: null,
+    link: null,
+    git: null,
+  },
+  {
+    title: 'Z-Novel',
+    description: 'Theme Wordpress for Reading Novel Website.',
+    image: null,
+    link: null,
+    git: null,
+  },
 ]

@@ -2,7 +2,7 @@ import { myInfo } from "@/data/data";
 
 const Hero = () => {
   return (
-    <section id="home" className="hero mt-20">
+    <section id="home" className="hero mt-[68px]">
       <div className="container mx-auto px-5 py-10 md:py-20 flex flex-col gap-4">
         <span className="block text-xl md:text-2xl">Hi, I am</span>
         <h1 className="font-bold text-3xl md:text-5xl uppercase">{myInfo.name}</h1>
