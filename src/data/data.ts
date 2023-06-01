@@ -13,12 +13,21 @@ export const aboutMe = 'I’m graduated from Electronics Engineering ⚡, but be
 
 export const mySkills = ['HTML5', 'CSS3', 'Javascript', 'Typescript', 'PHP', 'Python', 'SQL', 'C++', 'NodeJS', 'React.js', 'NextJS', 'TailwindCSS', 'Firebase', 'Git', 'GraphQL', 'React Native', 'Figma', 'Wordpress', 'Elementor', 'Arduino', 'IoT', 'Raspberry Pi', 'ESP32', 'NodeMCU'];
 
+export const myContacts = {
+  email: 'sofyan423@gmail.com',
+  phone: '+6289513190059',
+  discord: 'Sofyan#9087',
+  linkedin: 'https://www.linkedin.com/in/sofyan-rudiana-syamsi/',
+  github: 'https://github.com/sofyan-rs',
+  instagram: 'https://www.instagram.com/sofyan_zr/',
+}
+
 export const myProjects = [
   {
     title: 'Tantri - Company Profile',
     description: 'Tantri is a sub business of Sasana Digital which operates in the field of online order management system for restaurants, cafes, and other culinary businesses. Created using Next.js and TailwindCSS.',
     image: null,
-    link: 'https://kasir.tantri.id/',
+    link: 'https://tantri.id/',
     git: null,
   },
   {
