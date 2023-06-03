@@ -1,4 +1,4 @@
-This portofolio template is created using NextJS & TailwindCSS.
+This portofolio template is created using NextJS 13 & TailwindCSS.
 
 ## Run this Project on Development Server
 
