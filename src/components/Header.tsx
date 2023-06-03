@@ -8,10 +8,7 @@ import { useEffect, useState } from "react";
 const Header = () => {
   const { systemTheme, theme, setTheme } = useTheme();
   const currentTheme = theme === 'system' ? systemTheme : theme;
-  const storedTheme = localStorage.getItem("theme") || "light";
-  const [toggleIcon, setToggleIcon] = useState(
-    storedTheme === "dark" ? faSun : faMoon
-  );
+  const [toggleIcon, setToggleIcon] = useState<any>();
 
   const menus = [
     {
@@ -43,6 +40,15 @@ const Header = () => {
       setToggleIcon(faMoon);
     }
   }, [currentTheme]);
+
+  useEffect(() => {
+    const storedTheme = localStorage.getItem("theme") || "light";
+    if (storedTheme === "dark") {
+      setToggleIcon(faSun);
+    } else {
+      setToggleIcon(faMoon);
+    }
+  }, [])
 
   return (
     <header className="bg-white shadow-xl border-t-8 border-red-400 fixed w-full z-50 top-0 dark:bg-slate-900">
