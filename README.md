@@ -1,4 +1,4 @@
-This portofolio template is created using NextJS 13 & TailwindCSS.
+This portofolio wesbite is created using NextJS 13 & TailwindCSS.
 
 ## Run this Project on Development Server
 
