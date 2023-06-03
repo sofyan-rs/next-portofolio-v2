@@ -54,7 +54,7 @@ const Header = () => {
     <header className="bg-white shadow-xl border-t-8 border-red-400 fixed w-full z-30 top-0 dark:bg-slate-900">
       <div className="container mx-auto flex justify-between items-center px-5 py-3 relative overflow-hidden md:py-3">
         <div className="bg-red-400 text-xl text-white p-2 rounded-md">
-          <FontAwesomeIcon icon={faCarBattery} fixedWidth />
+          <FontAwesomeIcon icon={faCarBattery} fixedWidth bounce />
         </div>
         <div className="flex items-center gap-7">
           <ul className="left-0 right-0 bottom-0 bg-white p-3 border-t-2 border-slate-100 text-xs shadow-lg text-center fixed z-50 w-full grid grid-cols-4 gap-2 font-bold md:relative md:flex md:text-base md:bg-transparent md:shadow-none md:border-none md:gap-7 dark:bg-slate-900 dark:border-slate-700">
