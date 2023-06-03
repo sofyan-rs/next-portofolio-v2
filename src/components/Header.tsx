@@ -51,7 +51,7 @@ const Header = () => {
   }, [])
 
   return (
-    <header className="bg-white shadow-xl border-t-8 border-red-400 fixed w-full z-50 top-0 dark:bg-slate-900">
+    <header className="bg-white shadow-xl border-t-8 border-red-400 fixed w-full z-30 top-0 dark:bg-slate-900">
       <div className="container mx-auto flex justify-between items-center px-5 py-3 relative overflow-hidden md:py-3">
         <div className="bg-red-400 text-xl text-white p-2 rounded-md">
           <FontAwesomeIcon icon={faCarBattery} fixedWidth />

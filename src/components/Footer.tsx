@@ -32,9 +32,9 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-xl mb-4"><span className='pb-1 border-b-4 border-dotted border-red-400 inline-block'>Contact Me</span></h3>
             <ul className='flex flex-col gap-1'>
-              <li><FontAwesomeIcon icon={faEnvelope} fixedWidth className='text-red-500' /> {myContacts.email}</li>
-              <li><FontAwesomeIcon icon={faWhatsapp} fixedWidth className='text-red-500' /> {myContacts.phone}</li>
-              <li><FontAwesomeIcon icon={faDiscord} fixedWidth className='text-red-500' /> {myContacts.discord}</li>
+              <li><FontAwesomeIcon icon={faEnvelope} fixedWidth className='text-red-400' /> {myContacts.email}</li>
+              <li><FontAwesomeIcon icon={faWhatsapp} fixedWidth className='text-red-400' /> {myContacts.phone}</li>
+              <li><FontAwesomeIcon icon={faDiscord} fixedWidth className='text-red-400' /> {myContacts.discord}</li>
             </ul>
           </div>
           <div className='flex items-center'>
