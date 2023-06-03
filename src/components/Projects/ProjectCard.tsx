@@ -21,12 +21,12 @@ const ProjectCard = ({project}: Props) => {
       </p>
       <div className="mt-3 flex gap-2">
         {project.git && (
-          <a href={project.git} className="inline-flex bg-red-400 text-white p-2 rounded-sm">
+          <a href={project.git} className="inline-flex bg-red-400 text-white p-2 rounded-sm" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGit} fixedWidth />
           </a>
         )}
         {project.link && (
-          <a href={project.link} className="inline-flex bg-slate-100 text-red-400 p-2 rounded-sm dark:bg-slate-600">
+          <a href={project.link} className="inline-flex bg-slate-100 text-red-400 p-2 rounded-sm dark:bg-slate-600" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faArrowUpRightFromSquare} fixedWidth />
           </a>
         )}

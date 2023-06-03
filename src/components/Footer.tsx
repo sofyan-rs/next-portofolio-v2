@@ -40,7 +40,7 @@ const Footer = () => {
           <div className='flex items-center'>
             <div className='flex flex-col gap-3 md:flex-row text-lg'>
               {mySosmed.map((sosmed) => (
-                <a key={sosmed.id} className="block bg-red-400 text-white px-2 py-0.5 rounded-sm" href={sosmed.url}>
+                <a key={sosmed.id} className="block bg-red-400 text-white px-2 py-0.5 rounded-sm" href={sosmed.url} target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={sosmed.icon} fixedWidth />
                 </a>
               ))}
