@@ -1,9 +1,17 @@
 "use client";
 import scrollElementToIdMinusHeight from "@/utils/scrollToElement";
-import { faCarBattery, faMoon, faHome, faCode, faEnvelope, faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import { faCarBattery, faMoon, faSun, faHome, faCode, faEnvelope, faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 const Header = () => {
+  const { systemTheme, theme, setTheme } = useTheme();
+  const currentTheme = theme === 'system' ? systemTheme : theme;
+  const [toggleIcon, setToggleIcon] = useState(
+    currentTheme === "light" ? faMoon : faSun
+  );
+
   const menus = [
     {
       id: "home",
@@ -27,8 +35,16 @@ const Header = () => {
     },
   ];
 
+  useEffect(() => {
+    if (currentTheme === "light") {
+      setToggleIcon(faMoon);
+    } else {
+      setToggleIcon(faSun);
+    }
+  }, [currentTheme]);
+
   return (
-    <header className="bg-white shadow-xl border-t-8 border-red-400 fixed w-full z-50 top-0">
+    <header className="bg-white shadow-xl border-t-8 border-red-400 fixed w-full z-50 top-0 dark:bg-slate-900">
       <div className="container mx-auto flex justify-between items-center px-5 py-3 relative overflow-hidden md:py-3">
         <div className="bg-red-400 text-xl text-white p-2 rounded-md">
           <FontAwesomeIcon icon={faCarBattery} fixedWidth />
@@ -44,9 +60,10 @@ const Header = () => {
               </li>
             ))}
           </ul>
-          {/* <button className="text-red-400 bg-gray-100 p-1 text-xl rounded-sm">
-            <FontAwesomeIcon icon={faMoon} fixedWidth />
-          </button> */}
+          {/* The current theme is: {theme} */}
+          <button onClick={() => theme == "dark"? setTheme('light'): setTheme("dark")} className="text-red-400 bg-gray-100 p-1 text-xl rounded-sm dark:bg-slate-800">
+          <FontAwesomeIcon icon={toggleIcon} fixedWidth />
+          </button>
         </div>
       </div>
     </header>

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gray-100 text-gray-800;
+  @apply bg-gray-100 text-slate-800 dark:bg-slate-800 dark:text-slate-200;
 }
 a,
 button,
@@ -13,6 +13,9 @@ label {
 }
 .hero{
   background:#f3f4f6 url('/img/bg-patern.png');-webkit-animation:loopnavbg-data-v-c423aec0 350s linear infinite;animation:loopnavbg-data-v-c423aec0 350s linear infinite;-webkit-animation:loopnavbg-data-v-c423aec0 350s linear infinite;animation:loopnavbg-data-v-c423aec0 350s linear infinite;animation:loopingbackg 350s linear infinite
+}
+.dark .hero{
+  background:#1f2937 url('/img/bg-patern.png');-webkit-animation:loopnavbg-data-v-c423aec0 350s linear infinite;animation:loopnavbg-data-v-c423aec0 350s linear infinite;-webkit-animation:loopnavbg-data-v-c423aec0 350s linear infinite;animation:loopnavbg-data-v-c423aec0 350s linear infinite;animation:loopingbackg 350s linear infinite
 }
 .menu:hover .icon {
   @apply text-red-400 bg-gray-100;

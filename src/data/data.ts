@@ -11,7 +11,7 @@ export const myInfo = {
 
 export const aboutMe = 'I’m graduated from Electronics Engineering ⚡, but because my passion now currently working as Frontend Developer 👨‍💻. I’m usually make project using React.js, NextJS, Wordpress, and React Native.';
 
-export const mySkills = ['HTML5', 'CSS3', 'Javascript', 'Typescript', 'PHP', 'Python', 'SQL', 'C++', 'NodeJS', 'React.js', 'NextJS', 'TailwindCSS', 'Firebase', 'Git', 'GraphQL', 'React Native', 'Figma', 'Wordpress', 'Elementor', 'Arduino', 'IoT', 'Raspberry Pi', 'ESP32', 'NodeMCU'];
+export const mySkills = ['HTML5', 'CSS3', 'Javascript', 'Typescript', 'PHP', 'Python', 'SQL', 'C++', 'NodeJS', 'React.js', 'NextJS', 'Redux', 'TailwindCSS', 'Firebase', 'Git', 'GraphQL', 'React Native', 'Figma', 'Wordpress', 'Elementor', 'Arduino', 'IoT', 'Raspberry Pi', 'ESP32', 'NodeMCU'];
 
 export const myContacts = {
   email: 'sofyan423@gmail.com',

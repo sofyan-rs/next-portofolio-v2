@@ -26,7 +26,7 @@ const Footer = () => {
   ];
     
   return (
-    <footer id='contact' className="mb-[75px] md:mb-0 bg-white border-t-4 border-red-400">
+    <footer id='contact' className="mb-[75px] md:mb-0 bg-white border-t-4 border-red-400 dark:bg-slate-900">
       <div className="container mx-auto px-5">
         <div className="py-10 flex place-content-between">
           <div>
@@ -47,7 +47,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="py-4 border-t-4 border-gray-100 border-dashed text-sm flex place-content-between">
+        <div className="py-4 border-t-4 border-gray-100 border-dashed text-sm flex place-content-between dark:border-slate-800">
           <span>Copyright © {year}</span>
           <span>Created with <FontAwesomeIcon icon={faHeart} fixedWidth className="text-red-400" /> by Me</span>
         </div>
