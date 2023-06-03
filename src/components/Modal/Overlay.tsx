@@ -1,11 +1,15 @@
+import { useEffect } from "react";
+
 interface Props {
   isOpen: boolean;
   toggle: () => void;
 }
 
 const Overlay = ({ isOpen, toggle }: Props) => {
-  if (isOpen) document.body.classList.add("overflow-hidden");
-  else document.body.classList.remove("overflow-hidden");
+  useEffect(() => {
+    if (isOpen) document.body.classList.add("overflow-hidden");
+    else document.body.classList.remove("overflow-hidden");
+  }, [isOpen])
 
   return (
     // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
