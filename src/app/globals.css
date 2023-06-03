@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gray-100 text-slate-800 dark:bg-slate-800 dark:text-slate-200;
+  @apply bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-200;
 }
 a,
 button,
@@ -18,7 +18,7 @@ label {
   background:#1f2937 url('/img/bg-patern.png');-webkit-animation:loopnavbg-data-v-c423aec0 350s linear infinite;animation:loopnavbg-data-v-c423aec0 350s linear infinite;-webkit-animation:loopnavbg-data-v-c423aec0 350s linear infinite;animation:loopnavbg-data-v-c423aec0 350s linear infinite;animation:loopingbackg 350s linear infinite
 }
 .menu:hover .icon {
-  @apply text-red-400 bg-gray-100 dark:bg-slate-700;
+  @apply text-red-400 bg-slate-100 dark:bg-slate-700;
 }
 
 @-webkit-keyframes loopingbackg{

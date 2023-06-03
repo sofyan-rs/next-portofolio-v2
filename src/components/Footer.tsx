@@ -47,7 +47,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="py-4 border-t-4 border-gray-100 border-dashed text-sm flex place-content-between dark:border-slate-800">
+        <div className="py-4 border-t-4 border-slate-100 border-dashed text-sm flex place-content-between dark:border-slate-800">
           <span>Copyright © {year}</span>
           <span>Created with <FontAwesomeIcon icon={faHeart} fixedWidth className="text-red-400" /> by Me</span>
         </div>

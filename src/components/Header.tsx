@@ -51,7 +51,7 @@ const Header = () => {
           <FontAwesomeIcon icon={faCarBattery} fixedWidth />
         </div>
         <div className="flex items-center gap-7">
-          <ul className="left-0 right-0 bottom-0 bg-white p-3 border-t-2 border-gray-100 text-xs shadow-lg text-center fixed z-50 w-full grid grid-cols-4 gap-2 font-bold md:relative md:flex md:text-base md:bg-transparent md:shadow-none md:border-none md:gap-7 dark:bg-slate-900 dark:border-slate-700">
+          <ul className="left-0 right-0 bottom-0 bg-white p-3 border-t-2 border-slate-100 text-xs shadow-lg text-center fixed z-50 w-full grid grid-cols-4 gap-2 font-bold md:relative md:flex md:text-base md:bg-transparent md:shadow-none md:border-none md:gap-7 dark:bg-slate-900 dark:border-slate-700">
             {menus.map((menu) => (
               <li key={menu.id}>
                 <button onClick={() => scrollElementToIdMinusHeight(menu.id, 68)} className="menu hover:text-red-400 transition flex flex-col items-center w-full">
@@ -61,7 +61,7 @@ const Header = () => {
               </li>
             ))}
           </ul>
-          <button onClick={() => theme == "dark"? setTheme('light'): setTheme("dark")} className="text-red-400 bg-gray-100 p-1 text-xl rounded-sm dark:bg-slate-800">
+          <button onClick={() => theme == "dark"? setTheme('light'): setTheme("dark")} className="text-red-400 bg-slate-100 p-1 text-xl rounded-sm dark:bg-slate-800">
           <FontAwesomeIcon icon={toggleIcon} fixedWidth />
           </button>
         </div>

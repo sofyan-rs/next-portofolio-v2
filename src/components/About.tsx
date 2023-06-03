@@ -2,7 +2,7 @@ import { aboutMe, mySkills } from "@/data/data";
 
 const About = () => {
   return (
-    <section id="about" className="bg-red-400 border-y-[8px] border-dashed border-gray-100 dark:border-slate-800">
+    <section id="about" className="bg-red-400 border-y-[8px] border-dashed border-slate-100 dark:border-slate-800">
       <div className="container mx-auto px-5 py-8">
         <h2 className="text-2xl font-bold mb-2">About Me</h2>
         <p className="text-justify">

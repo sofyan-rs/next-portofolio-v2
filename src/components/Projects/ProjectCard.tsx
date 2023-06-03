@@ -26,7 +26,7 @@ const ProjectCard = ({project}: Props) => {
           </a>
         )}
         {project.link && (
-          <a href={project.link} className="inline-flex bg-gray-100 text-red-400 p-2 rounded-sm dark:bg-slate-600">
+          <a href={project.link} className="inline-flex bg-slate-100 text-red-400 p-2 rounded-sm dark:bg-slate-600">
             <FontAwesomeIcon icon={faArrowUpRightFromSquare} fixedWidth />
           </a>
         )}

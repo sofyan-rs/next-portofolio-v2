@@ -27,7 +27,7 @@ const ProjectContainer = () => {
       </div>
       {projects.length < myProjects.length && (
         <div className="flex justify-center mt-7">
-          <button onClick={handleShowMore} className="bg-red-500 text-white px-3 py-2 text-lg font-semibold rounded-sm transition disabled:bg-gray-300 disabled:text-gray-500" disabled={isLoading}>{isLoading ? 'Loading...' : 'Show More'}</button>
+          <button onClick={handleShowMore} className="bg-red-500 text-white px-3 py-2 text-lg font-semibold rounded-sm transition disabled:bg-slate-300 disabled:text-slate-500 dark:disabled:bg-slate-700" disabled={isLoading}>{isLoading ? 'Loading...' : 'Show More'}</button>
         </div>
       )}
     </section>
