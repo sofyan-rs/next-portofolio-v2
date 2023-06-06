@@ -20,7 +20,7 @@ const Modal = ({
       <Overlay isOpen={showModal} toggle={handleShow} />
       <div
         className={`${
-          showModal ? "top-[100px]" : "-top-[4000px]"
+          showModal ? "top-[30px]" : "-top-[4000px]"
         } w-[500px] max-w-full fixed left-0 right-0 z-50 mx-auto flex place-items-center justify-center overflow-hidden transition-all ease-out`}
       >
         <div className="mx-4 w-full overflow-hidden rounded-sm bg-white dark:bg-slate-700">

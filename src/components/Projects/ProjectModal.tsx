@@ -12,7 +12,7 @@ const ProjectModal = ({ project } : Props) => {
   return (
     <div>
       {project.image && (
-        <div className="max-h-[280px] overflow-hidden">
+        <div className="max-h-[250px] overflow-hidden">
           <Image className="w-full" src={`/img/ss-project/${project.image}`} width={640} height={580} alt={project.title} />
         </div>
       )}
