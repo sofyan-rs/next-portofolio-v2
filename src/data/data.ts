@@ -24,6 +24,22 @@ export const myContacts = {
 
 export const myProjects = [
   {
+    title: 'BacaKomik - Mobile Apps',
+    description: 'BacaKomik is a mobile application for reading manga which I create when I am bored and want to learn about React Native Features.',
+    image: 'bacakomik-app.png',
+    link: 'https://drive.google.com/drive/u/0/folders/1fI_wmyeoz70qmBxqN3ruha-yblToVmQ0',
+    git: null,
+    techUsed: ['react-native', 'nativewind', 'redux', 'firebase'],
+  },
+  {
+    title: 'Tantri POS - Mobile Apps',
+    description: 'Mobile App Version of Tantri POS System for managing Online Order for restaurants, cafes, and other culinary businesses. Created using React Native.',
+    image: 'tantri-mobile-app.png',
+    link: 'https://tantri.id/',
+    git: null,
+    techUsed: ['react-native', 'nativewind', 'redux'],
+  },
+  {
     title: 'Tantri - Company Profile',
     description: 'Tantri is a sub business of Sasana Digital which operates in the field of online order management system for restaurants, cafes, and other culinary businesses. Created using Next.js and TailwindCSS.',
     image: 'tantri-id.png',
@@ -45,7 +61,7 @@ export const myProjects = [
     image: 'kasir-tantri.png',
     link: 'https://kasir.tantri.id/',
     git: null,
-    techUsed: ['react.js', 'vite', 'tailwind-css'],
+    techUsed: ['react.js', 'vite', 'tailwind-css', 'redux'],
   },
   {
     title: 'Tantri - QR Menu Online Order',
