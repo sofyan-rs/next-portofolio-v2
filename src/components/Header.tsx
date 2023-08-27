@@ -62,21 +62,11 @@ const Header = () => {
   return (
     <header className="fixed top-0 z-30 w-full border-t-8 border-red-400 bg-white shadow-xl dark:bg-slate-900">
       <div className="container relative mx-auto flex items-center justify-between overflow-hidden px-5 py-3 md:py-3">
-        <motion.div
-          className="rounded-md bg-red-400 p-2 text-xl text-white"
-          initial={{ opacity: 0, x: -30 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.2 }}
-        >
+        <div className="rounded-md bg-red-400 p-2 text-xl text-white">
           <FontAwesomeIcon icon={faCarBattery} fixedWidth bounce />
-        </motion.div>
+        </div>
         <div className="flex items-center gap-7">
-          <motion.ul
-            className="fixed bottom-0 left-0 right-0 z-50 grid w-full grid-cols-4 gap-2 border-t-2 border-slate-100 bg-white p-3 text-center text-xs font-bold shadow-lg dark:border-slate-700 dark:bg-slate-900 md:relative md:flex md:gap-7 md:border-none md:bg-transparent md:text-base md:shadow-none"
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.4 }}
-          >
+          <ul className="fixed bottom-0 left-0 right-0 z-50 grid w-full grid-cols-4 gap-2 border-t-2 border-slate-100 bg-white p-3 text-center text-xs font-bold shadow-lg dark:border-slate-700 dark:bg-slate-900 md:relative md:flex md:gap-7 md:border-none md:bg-transparent md:text-base md:shadow-none">
             {menus.map((menu) => (
               <li key={menu.id}>
                 <button
@@ -92,7 +82,7 @@ const Header = () => {
                 </button>
               </li>
             ))}
-          </motion.ul>
+          </ul>
           <motion.button
             onClick={() =>
               theme == "dark" ? setTheme("light") : setTheme("dark")
