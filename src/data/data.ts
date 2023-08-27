@@ -53,7 +53,7 @@ export const mySkills = {
   ],
 };
 
-export const toolsIUse = ["VSCode", "Figma", "Git"];
+export const toolsIUse = ["VSCode", "Figma", "Git", "Postman"];
 
 export const myContacts = {
   email: "sofyan423@gmail.com",
