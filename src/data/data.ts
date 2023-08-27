@@ -33,7 +33,15 @@ export const mySkills = {
     "Wordpress",
     "Elementor",
   ],
-  backend: ["NodeJS", "Express.js", "Firebase", "GraphQL"],
+  backend: [
+    "NodeJS",
+    "Express.js",
+    "Firebase",
+    "MySQL",
+    "PostgreSQL",
+    "MongoDB",
+    "GraphQL",
+  ],
   mobile: ["React Native"],
   others: [
     "IoT",
