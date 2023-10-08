@@ -1,6 +1,7 @@
 export const myInfo = {
   name: "Sofyan Rudiana Syamsi",
-  title: "Frontend Developer",
+  role1: "Frontend Developer",
+  role2: "Mobile Developer",
   email: "sofyan423@gmail.com",
   phone: "089513190059",
   website: "https://me.koidevz.com",
@@ -20,10 +21,12 @@ export const mySkills = {
     "Python",
     "SQL",
     "C++",
+    "Dart",
+    "Kotlin",
   ],
   frontend: [
-    "HTML5",
-    "CSS3",
+    "HTML",
+    "CSS",
     "Vite",
     "ReactJS",
     "Next.js",
@@ -42,7 +45,7 @@ export const mySkills = {
     "MongoDB",
     "GraphQL",
   ],
-  mobile: ["React Native"],
+  mobile: ["React Native", "Flutter", "Jetpack Compose"],
   others: [
     "IoT",
     "Arduino",

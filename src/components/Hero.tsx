@@ -1,6 +1,7 @@
 "use client";
 import { myInfo } from "@/data/data";
 import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   return (
@@ -28,7 +29,17 @@ const Hero = () => {
           transition={{ delay: 0.8 }}
         >
           <h2 className="inline-block bg-red-400 px-4 py-1.5 text-xl font-semibold md:text-2xl">
-            {myInfo.title}
+            <TypeAnimation
+              sequence={[
+                myInfo.role1,
+                2000,
+                myInfo.role2,
+                2000,
+              ]}
+              wrapper="span"
+              cursor={true}
+              repeat={Infinity}
+            />
           </h2>
         </motion.div>
       </div>
