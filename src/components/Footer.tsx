@@ -45,15 +45,15 @@ const Footer = () => {
             </h3>
             <ul className="flex flex-col gap-1">
               <li className="flex flex-row items-center gap-2">
-                <MailIcon size={20} className="inline-block text-red-400" />
+                <MailIcon size={18} className="inline-block text-red-400" />
                 {myContacts.email}
               </li>
               <li className="flex flex-row items-center gap-2">
-                <WhatsAppIcon size={20} className="inline-block text-red-400" />
+                <WhatsAppIcon size={18} className="inline-block text-red-400" />
                 {myContacts.phone}
               </li>
               <li className="flex flex-row items-center gap-2">
-                <DiscordIcon size={20} className="inline-block text-red-400" />
+                <DiscordIcon size={18} className="inline-block text-red-400" />
                 {myContacts.discord}
               </li>
             </ul>

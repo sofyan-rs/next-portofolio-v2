@@ -8,6 +8,7 @@ import {
   FolderGit2Icon,
   MoreHorizontalIcon,
 } from "lucide-react";
+import Image from "next/image";
 
 interface Props {
   project: ProjectData;
@@ -21,12 +22,18 @@ const ProjectCard = ({ project }: Props) => {
 
   return (
     <>
-      <div className="flex flex-col justify-between rounded-md bg-white p-5 shadow-sm transition hover:-translate-y-2 hover:shadow-md dark:bg-slate-700">
-        <div>
-          <h3 className="text-lg font-bold">{project.title}</h3>
-          <p className="mt-1 text-justify text-sm">{project.description}</p>
+      <div className="flex flex-col justify-between rounded-md bg-white shadow-sm transition hover:-translate-y-2 hover:shadow-md dark:bg-slate-700">
+        <h3 className="p-5 text-lg font-bold">{project.title}</h3>
+        <div className="h-48 overflow-hidden md:h-44 lg:h-56 xl:h-44 2xl:h-56">
+          <Image
+            className="w-full"
+            src={`/img/ss-project/${project.image}`}
+            width={640}
+            height={400}
+            alt={project.title}
+          />
         </div>
-        <div className="mt-3 flex justify-between gap-2">
+        <div className="flex justify-between gap-2 p-5">
           <div className="flex gap-2">
             {project.git && (
               <a
