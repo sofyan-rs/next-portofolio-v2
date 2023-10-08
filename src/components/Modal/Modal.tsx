@@ -24,7 +24,7 @@ const Modal = ({ showModal, handleShow, title, children }: Props) => {
               <XIcon />
             </button>
           </div>
-          <div className="max-h-[calc(100vh-140px)] overflow-auto">
+          <div className="max-h-[calc(100dvh-140px)] overflow-auto">
             {children}
           </div>
         </div>
