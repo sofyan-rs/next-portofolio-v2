@@ -10,15 +10,13 @@ const ProjectModal = ({ project }: Props) => {
   return (
     <div>
       {project.image && (
-        <div className="max-h-[250px] overflow-hidden border-b border-slate-100 dark:border-slate-600">
-          <Image
-            className="w-full"
-            src={`/img/ss-project/${project.image}`}
-            width={640}
-            height={580}
-            alt={project.title}
-          />
-        </div>
+        <Image
+          className="w-full border-b border-slate-100 dark:border-slate-600"
+          src={`/img/ss-project/${project.image}`}
+          width={640}
+          height={580}
+          alt={project.title}
+        />
       )}
       <div className="flex flex-col gap-4 p-5">
         <p className="text-justify text-sm">{project.description}</p>
