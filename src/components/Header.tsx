@@ -22,22 +22,22 @@ const Header = () => {
     {
       id: "home",
       label: "Home",
-      icon: <HomeIcon />,
+      icon: <HomeIcon size={22} />,
     },
     {
       id: "about",
       label: "About Me",
-      icon: <Code2Icon />,
+      icon: <Code2Icon size={22} />,
     },
     {
       id: "projects",
       label: "Projects",
-      icon: <BriefcaseIcon />,
+      icon: <BriefcaseIcon size={22} />,
     },
     {
       id: "contact",
       label: "Contact Me",
-      icon: <MailIcon />,
+      icon: <MailIcon size={22} />,
     },
   ];
 
@@ -69,7 +69,7 @@ const Header = () => {
             {menus.map((menu) => (
               <li key={menu.id}>
                 <button
-                  onClick={() => scrollElementToIdMinusHeight(menu.id, 68)}
+                  onClick={() => scrollElementToIdMinusHeight(menu.id, 62)}
                   className="menu flex w-full flex-col items-center transition hover:text-red-400"
                 >
                   <div className="icon mb-1 rounded-sm px-5 py-1.5 text-lg text-slate-400 transition md:!hidden">

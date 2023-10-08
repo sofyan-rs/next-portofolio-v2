@@ -33,7 +33,7 @@ const Footer = () => {
   return (
     <footer
       id="contact"
-      className="mb-[75px] border-t-4 border-red-400 bg-white dark:bg-slate-900 md:mb-0"
+      className="mb-[80px] border-t-4 border-red-400 bg-white dark:bg-slate-900 md:mb-0"
     >
       <div className="container mx-auto px-5">
         <div className="flex place-content-between py-10">
