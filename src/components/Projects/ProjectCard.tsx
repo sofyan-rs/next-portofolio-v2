@@ -22,9 +22,9 @@ const ProjectCard = ({ project }: Props) => {
 
   return (
     <>
-      <div className="flex flex-col justify-between rounded-md bg-white shadow-sm transition hover:-translate-y-2 hover:shadow-md dark:bg-slate-700">
+      <div className="flex flex-col justify-between rounded-md border-red-400 bg-white shadow-sm transition-all hover:-translate-y-2 hover:border-t-4 hover:shadow-md dark:bg-slate-700">
         <h3 className="p-5 text-lg font-bold">{project.title}</h3>
-        <div className="h-48 overflow-hidden md:h-44 lg:h-56 xl:h-44 2xl:h-56">
+        <div className="h-48 overflow-hidden border-y border-slate-100 dark:border-slate-600 md:h-44 lg:h-56 xl:h-44 2xl:h-[220px]">
           <Image
             className="w-full"
             src={`/img/ss-project/${project.image}`}

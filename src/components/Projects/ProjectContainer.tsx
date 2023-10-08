@@ -22,7 +22,7 @@ const ProjectContainer = () => {
           My Projects
         </span>
       </h2>
-      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
         {projects.map((project, index) => (
           <ProjectCard key={index} project={project} />
         ))}
