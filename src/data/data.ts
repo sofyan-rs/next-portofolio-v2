@@ -69,6 +69,15 @@ export const myContacts = {
 
 export const myProjects = [
   {
+    title: "Tantri Inventory Scanner - Mobile Apps",
+    description:
+      "Mobile App for QR Scanner Invoice that used in inventory in BackOffice. Created using React Native",
+    image: "tantri-scanner-app.png",
+    link: "https://play.google.com/store/apps/details?id=com.tantri.scanner",
+    git: null,
+    techUsed: ["react-native", "nativewind", "redux"],
+  },
+  {
     title: "BacaKomik - Mobile Apps",
     description:
       "BacaKomik is a mobile application for reading manga which I create when I am bored and want to learn about React Native Features.",
@@ -82,7 +91,7 @@ export const myProjects = [
     description:
       "Mobile App Version of Tantri POS System for managing Online Order for restaurants, cafes, and other culinary businesses. Created using React Native.",
     image: "tantri-mobile-app.png",
-    link: "https://tantri.id/",
+    link: "https://play.google.com/store/apps/details?id=com.tantriapp",
     git: null,
     techUsed: ["react-native", "nativewind", "redux"],
   },
